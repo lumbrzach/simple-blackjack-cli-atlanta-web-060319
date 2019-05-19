@@ -56,8 +56,6 @@ def runner
   welcome
   initial_round
   until initial_round > 21
-    prompt_user
-    get_user_input
     hit?
   end
   end_game
