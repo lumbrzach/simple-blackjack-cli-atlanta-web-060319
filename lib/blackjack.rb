@@ -53,11 +53,12 @@ end
 #####################################################
 
 def runner
-  until end_game(card_total > 21)
-    welcome
-    initial_round
+  welcome
+  initial_round
+  until card_total > 21
     prompt_user
     get_user_input
     hit?
   end
+  end_game
 end
